@@ -1,29 +1,209 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.content__title {
-  background-color: rgb(224, 232, 162);
-}
-.content__text {
-  padding: 10px;
-  border: 2px solid rgba(180, 186, 134, 0.885);
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  gap: 20px;
+.page {
+  font-family: "Poppins", sans-serif;
 }
-.list__item {
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: aquamarine;
+.page__body {
+  margin: 0 auto;
+}
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  transform: translateY(-100%);
+}
+.page__menu:target {
+  transform: translateY(0);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(rgba(31, 36, 45, 0.5), rgba(31, 36, 45, 0.5)), url(./images/bg.png) center/cover, linear-gradient(rgb(31, 36, 45), rgb(31, 36, 45));
+  background-repeat: no-repeat;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .header__list {
+    display: block;
+  }
+}
+.header__menu--opener {
+  width: 20px;
+  height: 20px;
+  background-image: url(./images/Hamburger.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+@media (min-width: 1440px) {
+  .header__menu--opener {
+    display: none;
+  }
+}
+.header__menu--opener:hover {
+  transform: scale(120%);
+}
+.header__menu--language {
+  display: none;
+  padding-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+@media (min-width: 1440px) {
+  .header__menu--language {
+    display: inline;
+  }
+}
+.header__menu--language:hover {
+  border-color: white;
+}
+.header__title {
+  margin-bottom: 15px;
+  max-width: 900px;
+  font-weight: 500;
+  font-size: 25px;
+}
+@media (min-width: 769px) {
+  .header__title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 50px;
+  }
+}
+.header__subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  .header__subtitle {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header__subtitle--text {
+  margin-bottom: 15px;
+  max-width: 900px;
+  font-weight: 300;
+  font-size: 18px;
+}
+@media (min-width: 769px) {
+  .header__subtitle--text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__subtitle--text {
+    font-size: 25px;
+  }
+}
+.header__subtitle--arrow {
+  height: 30px;
+  width: 20px;
+  background-image: url(./images/Arrow_-_Scroll.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+@media (min-width: 1440px) {
+  .header__subtitle--arrow {
+    height: 90px;
+  }
+}
+.header__subtitle--arrow:hover {
+  transform: scale(120%);
+}
+
+.container {
+  padding: 40px;
+  max-width: 630px;
+}
+@media (min-width: 769px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.menu {
+  background-color: rgb(31, 36, 45);
+}
+.menu__content {
+  height: 100vh;
+}
+.menu__actions {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__actions--cross {
+  height: 20px;
+  width: 20px;
+  background-image: url(../../docs/images/cross.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.menu__actions--cross:hover {
+  transform: scale(120%);
+}
+.menu__list {
+  list-style: none;
   text-align: center;
+}
+@media (min-width: 1440px) {
+  .menu__list {
+    display: inline;
+    display: flex;
+    gap: 60px;
+  }
+}
+.menu__item {
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid transparent;
+  font-weight: 300;
+  transition: 0.3s;
+}
+@media (min-width: 1440px) {
+  .menu__item {
+    margin-bottom: 0;
+  }
+}
+.menu__item:hover {
+  border-color: white;
+}
+.menu__link {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

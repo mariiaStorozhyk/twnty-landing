@@ -1,0 +1,21 @@
+.page {
+  font-family: 'Poppins', sans-serif;
+
+  &__body {
+    margin: 0 auto;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: $transitionTime;
+
+    transform: translateY(-100%);
+
+    &:target {
+      transform: translateY(0);
+    }
+  }
+}
