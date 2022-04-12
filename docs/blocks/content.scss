@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $beigeBackGround;
+  font-weight: 300;
+  font-size: 18px;
+
+  @include onTablet {
+    font-size: 20px;
+  }
+
+  @include onDesktop {
+    font-size: 25px;
+  }
+
+  &__text {
+    padding-top: $paddingTop;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 1000px;
+  }
+
+
+  &__companies {
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include onTablet {
+      gap: 0;
+      justify-content: space-between;
+    }
+  
+    &--logo {
+      transition: $transitionTime;
+
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+  }
+}

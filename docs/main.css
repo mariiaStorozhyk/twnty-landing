@@ -8,6 +8,7 @@ h4 {
 
 .page {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .page__body {
   margin: 0 auto;
@@ -34,6 +35,7 @@ h4 {
   background-repeat: no-repeat;
 }
 .header__nav {
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +101,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 @media (min-width: 1440px) {
   .header__subtitle {
@@ -120,6 +123,7 @@ h4 {
 @media (min-width: 1440px) {
   .header__subtitle--text {
     font-size: 25px;
+    margin-bottom: 0;
   }
 }
 .header__subtitle--arrow {
@@ -140,21 +144,12 @@ h4 {
 }
 
 .container {
-  padding: 40px;
-  max-width: 630px;
-}
-@media (min-width: 769px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
+  box-sizing: border-box;
+  padding: 0 40px;
 }
 
 .menu {
+  padding-top: 40px;
   background-color: rgb(31, 36, 45);
 }
 .menu__content {
@@ -204,6 +199,82 @@ h4 {
 .menu__link {
   text-decoration: none;
   color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(217, 208, 192);
+  font-weight: 300;
+  font-size: 18px;
+}
+@media (min-width: 769px) {
+  .content {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .content {
+    font-size: 25px;
+  }
+}
+.content__text {
+  padding-top: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 1000px;
+}
+.content__companies {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 769px) {
+  .content__companies {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+.content__companies--logo {
+  transition: 0.3s;
+}
+.content__companies--logo:hover {
+  transform: scale(120%);
+}
+
+.contacts {
+  background-color: rgb(31, 36, 45);
+  color: white;
+  font-weight: 300;
+}
+.contacts__container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .contacts__container {
+    flex-direction: row;
+  }
+}
+.contacts__content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contacts__content--text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

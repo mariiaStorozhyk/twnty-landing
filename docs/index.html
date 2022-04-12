@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-  <title>Landing</title>
+  <title>TWNTY</title>
 </head>
 <body class="page__body">
   <header class="header" id="header">
@@ -42,7 +42,7 @@
         <h2 class="header__subtitle--text">
           TWNTY ist Ihre digitale Full-Service-Unit. Wir agieren ausschließlich mit Datengestützten Maßnahmen – für den perfekten Return-Of-Invest.
         </h2>
-        <a href="#" class="header__subtitle--arrow"></a>
+        <a href="#content" class="header__subtitle--arrow"></a>
       </div>
     </div>
   </header>
@@ -70,5 +70,184 @@
       </div>
     </div>
   </nav>
+
+  <section class="page__content content" id="content">
+    <div class="container">
+      <div class="content__text">
+        Uns vertrauen namhafte Konzerne, zukunftsorientierte Startups,
+        mittelständische Unternehmen und bekannte Marken – gehören sie dazu!
+      </div>
+    </div>  
+
+    <div class="content__companies">
+      <a 
+        href="https://www.tilray.com/"
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/Vektor-Smartobjekt.png" alt="Tilray">
+      </a>
+      
+      <a 
+        href="https://www.apple.com/"
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/Apple.png" alt="Apple">
+      </a>
+
+      <a 
+        href="https://www.bauerfeind.com/worldmap/" 
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/bauerfeind.png" alt="Bauerfeind">
+      </a>
+
+      <a 
+        href="https://www.subaru.com/" 
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/subaru.png" alt="Subaru">
+      </a>
+
+      <a 
+        href="https://bench.ca/" 
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/bench.png" alt="Bench">
+      </a>
+
+      <a 
+        href="https://www.audi.com/en.html" 
+        class="content__companies--logo"
+        target="_blank"
+      >
+        <img src="./images/aydi.png" alt="Audi">
+      </a>
+    </div>
+  </section>
+
+  <section class="page__contacts" id="contacts">
+    <div class="container contacts">
+      <div class="contacts__container">
+        <div class="contacts__content">
+          <h1 class="contacts__content--title">
+            Kontakt
+            <br>
+            - let's talk
+          </h1>
+  
+          <div class="contacts__content--text">
+            <div class="contacts__content--adress">
+              TWNTY Digital GmbH
+              <br>
+              Pfaffendorfer Straße 26
+              <br>
+              04105 Leipzig/Germany
+            </div>
+  
+            <div class="contacts__content--phone">
+              <a 
+                href="tel:+49 (0)341 221 796 00"
+              >
+                +49 (0)341 221 796 00
+              </a>
+              <a 
+                href="email:info@twnty.de"
+              >
+                info@twnty.de
+              </a>
+            </div>
+  
+            <div class="contacts__content--links">
+              <a 
+                href="https://www.linkedin.com/company/twnty/?originalSubdomain=de"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a 
+                href="https://www.xing.com/pages/twntydigitalgmbh"
+                target="_blank"
+              >
+                Xing
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/twnty/?originalSubdomain=de"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <form 
+          action="#"
+          method="get"
+          id="consultationForm"
+          class="contacts__form form"
+        >
+        <div class="form__container">
+          <label>
+            <input
+              required
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="form__field"
+            >
+          </label>
+  
+          <label>
+            <input
+              required
+              name="email"
+              type="email"
+              id="email"
+              placeholder="E-Mail"
+              class="form__field"
+            >
+          </label>
+        </div>
+  
+          <label>
+            <input
+              required
+              name="link"
+              type="url"
+              id="link"
+              placeholder="Betreff"
+              class="form__field"
+            >
+          </label>
+  
+          <textarea
+            required
+            name="message"
+            placeholder="Nachricht"
+          >
+          </textarea>
+  
+          <div class="form__container">
+            <input type="checkbox">
+            <div>
+              Ich habe die Datenschutzbestimmungen
+              <br>
+              Kenntnis genommen.
+            </div>
+          </div>
+  
+          <button>
+            <h1>Senden</h1>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
