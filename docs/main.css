@@ -2,8 +2,11 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul,
+li {
   margin: 0;
+  padding: 0;
 }
 
 .page {
@@ -79,6 +82,9 @@ h4 {
   }
 }
 .header__menu--language:hover {
+  border-color: white;
+}
+.header__menu--language:focus {
   border-color: white;
 }
 .header__title {
@@ -381,6 +387,9 @@ h4 {
   display: flex;
   font-size: 10px;
 }
+.form__confirmation--text {
+  cursor: pointer;
+}
 .form__button {
   background: none;
   color: white;
@@ -446,6 +455,19 @@ h4 {
     flex-direction: row;
     gap: 30px;
   }
+}
+
+.link {
+  width: max-content;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.link:hover {
+  border-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

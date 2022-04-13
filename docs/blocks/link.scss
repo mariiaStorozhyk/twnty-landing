@@ -1,0 +1,14 @@
+.link {
+  width: max-content;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+
+  transition: $transitionTime;
+
+  &:hover {
+    border-color: white;
+  }
+}

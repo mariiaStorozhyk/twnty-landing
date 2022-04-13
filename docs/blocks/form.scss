@@ -55,6 +55,10 @@
   &__confirmation {
     display: flex;
     font-size: 10px;
+
+    &--text {
+      cursor: pointer;
+    }
   }
 
   &__button {
