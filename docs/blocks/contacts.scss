@@ -1,10 +1,13 @@
 .contacts {
+
   background-color: $darkBackGround;
   color: white;
   font-weight: 300;
+  border-bottom: 1px solid white;
 
   &__container {
     margin: 0 auto;
+    margin-bottom: 40px;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -17,15 +20,61 @@
   }
 
   &__content {
-    max-width: 1000px;
+    padding-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include onTablet {
+      margin: 0;
+    }
+
+    &--title {
+      font-size: 30px;
+
+      @include onTablet {
+        font-style: 40px;
+      }
+
+      @include onDesktop {
+        font-style: 60px;
+      }
+    }
 
     &--text {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+
+    &--address {
+      color: white;
+      text-decoration: none;
+    }
+
+    &--phone {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &--links {
+      display: flex;
+      gap: 30px;
+    }
+
+    &--link {
+      width: max-content;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding-bottom: 5px;
+      border-bottom: 1px solid transparent;
+
+      transition: $transitionTime;
+
+      &:hover {
+        border-color: white;
+      }
     }
   }
 }

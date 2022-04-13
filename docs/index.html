@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <script src="scripts/main.js" defer></script>
   <title>TWNTY</title>
 </head>
 <body class="page__body">
@@ -141,10 +142,16 @@
           </h1>
   
           <div class="contacts__content--text">
-            <div class="contacts__content--adress">
+            <div>
               TWNTY Digital GmbH
               <br>
-              Pfaffendorfer Straße 26
+              <a 
+                href="https://goo.gl/maps/TGABYkEoD6gjSXKq5"
+                class="contacts__content--address"
+                target="_blank"
+              >
+                Pfaffendorfer Straße 26
+              </a>
               <br>
               04105 Leipzig/Germany
             </div>
@@ -152,11 +159,13 @@
             <div class="contacts__content--phone">
               <a 
                 href="tel:+49 (0)341 221 796 00"
+                class="contacts__content--link"
               >
                 +49 (0)341 221 796 00
               </a>
               <a 
                 href="email:info@twnty.de"
+                class="contacts__content--link"
               >
                 info@twnty.de
               </a>
@@ -165,18 +174,21 @@
             <div class="contacts__content--links">
               <a 
                 href="https://www.linkedin.com/company/twnty/?originalSubdomain=de"
+                class="contacts__content--link"
                 target="_blank"
               >
                 LinkedIn
               </a>
               <a 
                 href="https://www.xing.com/pages/twntydigitalgmbh"
+                class="contacts__content--link"
                 target="_blank"
               >
                 Xing
               </a>
               <a 
                 href="https://www.linkedin.com/company/twnty/?originalSubdomain=de"
+                class="contacts__content--link"
                 target="_blank"
               >
                 LinkedIn
@@ -192,49 +204,51 @@
           class="contacts__form form"
         >
         <div class="form__container">
-          <label>
-            <input
-              required
-              name="name"
-              type="text"
-              id="name"
-              placeholder="Name"
-              class="form__field"
-            >
-          </label>
-  
-          <label>
-            <input
-              required
-              name="email"
-              type="email"
-              id="email"
-              placeholder="E-Mail"
-              class="form__field"
-            >
-          </label>
+          <input
+            required
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Name"
+            class="form__field"
+          >
+
+          <input
+            required
+            name="email"
+            type="email"
+            id="email"
+            placeholder="E-Mail"
+            class="form__field"
+          >
         </div>
   
-          <label>
+        <input
+          required
+          name="link"
+          type="url"
+          id="link"
+          placeholder="Betreff"
+          class="form__field"
+        >
+
+        <textarea
+          required
+          name="message"
+          id="message"
+          placeholder="Nachricht"
+          class="form__field form__field--textarea"
+        >
+        </textarea>
+
+        <div class="form__container">
+          <div class="form__confirmation">
             <input
               required
-              name="link"
-              type="url"
-              id="link"
-              placeholder="Betreff"
-              class="form__field"
+              name="checkbox"
+              type="checkbox" 
+              class="form__field--checkbox"
             >
-          </label>
-  
-          <textarea
-            required
-            name="message"
-            placeholder="Nachricht"
-          >
-          </textarea>
-  
-          <div class="form__container">
-            <input type="checkbox">
             <div>
               Ich habe die Datenschutzbestimmungen
               <br>
@@ -242,12 +256,31 @@
             </div>
           </div>
   
-          <button>
-            <h1>Senden</h1>
+          <button class="form__button">
+            Senden
           </button>
+        </div>
         </form>
       </div>
     </div>
   </section>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__container">
+        <a href="https://mariiastorozhyk.github.io/twnty-landing/" class="footer__logo">
+          <img src="./images/Logo1.png" alt="Twnty">
+        </a>
+
+        <div class="footer__text">
+          <div class="footer__text--container">
+            <p>Impressum</p>
+            <p>Datenschutz</p>
+          </div>
+          <p>©2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
