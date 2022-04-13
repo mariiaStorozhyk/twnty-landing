@@ -1,4 +1,4 @@
-# Eco Cosmetic landing page
+# TWNTY landing page
 
 ## [DEMO LINK](https://mariiastorozhyk.github.io/twnty-landing/)
 
